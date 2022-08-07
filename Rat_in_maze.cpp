@@ -36,9 +36,9 @@ bool isSafe(int maze[N][N], int x, int y)
 bool solveMaze(int maze[N][N])
 {
 	int sol[N][N] = { { 0, 0, 0, 0 },
-					{ 0, 0, 0, 0 },
-					{ 0, 0, 0, 0 },
-					{ 0, 0, 0, 0 } };
+			  { 0, 0, 0, 0 },
+			  { 0, 0, 0, 0 },
+			  { 0, 0, 0, 0 } };
 	if (solveMazeUtil(maze, 0, 0, sol) == false) {
 		cout<<"Solution doesn't exist";
 		return false;
@@ -88,5 +88,3 @@ int main()
 	solveMaze(maze);
 	return 0;
 }
-
-// This code is contributed by Aditya Kumar (adityakumar129)
